@@ -1,4 +1,6 @@
 #!/usr/bin/bash
+mkdir adda-script
+cd adda-script
 URL=https://www.adda247.com/jobs/ssc-cgl-previous-year-question-paper/
 curl -f -L "$URL" | grep -Eo "https?://\S+?\.pdf" > links.txt
 rm -rf pdfs
